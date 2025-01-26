@@ -1,3 +1,9 @@
+:root {
+    --black-color: #151515;
+    --white-color: #f0f0f0;
+}
+
+
 .BlenderPro {
     font-family: 'Blender Pro';
     font-weight: 500;
@@ -29,5 +35,9 @@
 }
 
 .bg-dark-custom {
-    background-color: #151515;
+    background-color: var(--black-color);
+}
+
+.bg-light-custom {
+    background-color: var(--white-color);
 }

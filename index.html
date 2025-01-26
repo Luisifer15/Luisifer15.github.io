@@ -21,9 +21,8 @@
 </head>
 
 <body class="bg-dark-custom">
-
-    <header class="header container-fluid BlenderPro-Bold text-white fixed-top">
-        <div class="row justify-content-between align-items-center border-white border-bottom border-2 mx-sm-5 py-2">
+    <header class="header container-fluid BlenderPro-Bold fixed-top">
+        <div class="row justify-content-between align-items-center border-bottom border-2 mx-2 mx-sm-3 mx-md-4 mx-lg-5 py-2" id="topLine">
             <div class="col">
                 <img src="assets\logo\Wordmark wLogo white.svg" alt="Profile Picture" height="30">
             </div>
@@ -37,7 +36,7 @@
 
     <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
         <div class="offcanvas-header">
-            <h5 id="offcanvasRightLabel">Menu</h5>
+            <h5 id="offcanvasRightLabel">Navigation</h5>
             <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>
         <div class="offcanvas-body">
@@ -46,10 +45,13 @@
                     <a class="nav-link active" aria-current="page" href="#home">Home</a>
                 </li>
                 <li class="nav-item" data-bs-dismiss="offcanvas">
-                    <a class="nav-link" href="#about">About</a>
+                    <a class="nav-link" href="#skills">Skills</a>
                 </li>
                 <li class="nav-item" data-bs-dismiss="offcanvas">
                     <a class="nav-link" href="#projects">Projects</a>
+                </li>
+                <li class="nav-item" data-bs-dismiss="offcanvas">
+                    <a class="nav-link" href="#about">About</a>
                 </li>
                 <li class="nav-item" data-bs-dismiss="offcanvas">
                     <a class="nav-link" href="#contact">Contact</a>
@@ -62,38 +64,42 @@
         <section id="home" class="vh-100 d-flex align-items-center justify-content-center text-white">
             <h1>Home Section</h1>
         </section>
-        <section id="about" class="vh-100 d-flex align-items-center justify-content-center text-white">
-            <h1>About Section</h1>
+        <section id="skills" class="vh-100 d-flex align-items-center justify-content-center bg-light-custom">
+            <h1>Skills Section</h1>
         </section>
         <section id="projects" class="vh-100 d-flex align-items-center justify-content-center text-white">
             <h1>Projects Section</h1>
         </section>
-        <section id="contact" class="vh-100 d-flex align-items-center justify-content-center text-white">
+        <section id="about" class="vh-100 d-flex align-items-center justify-content-center bg-light-custom">
+            <h1>About Section</h1>
+        </section>
+        <section id="contact" class="vh-100 d-flex align-items-center justify-content-center bg-light-custom">
             <h1>Contact Section</h1>
         </section>
     </main>
 
-    <footer class="footer container-fluid text-white fixed-bottom">
-        <div class="row border-white border-top border-2 mx-sm-5 py-2">
+    <footer class="footer container-fluid fixed-bottom">
+        <div class="row align-items-center border-top border-2 mx-2 mx-sm-3 mx-md-4 mx-lg-5 py-2" id="bottomLine">
             <div class="col">
-                <a href="https://github.com/Luisifer15" target="_blank" class="btn btn-outline-light mx-1">
+                <a href="https://github.com/Luisifer15" target="_blank" class="btn btn-outline-light">
                     <i class="bi bi-github"></i>
-                </a>
-
-                <a href="https://linkedin.com/in/rimando-la" target="_blank" class="btn btn-outline-light mx-1">
+                </a>    
+                <a href="https://linkedin.com/in/rimando-la" target="_blank" class="btn btn-outline-light">
                     <i class="bi bi-linkedin"></i>
                 </a>
-
-                <a href="mailto:alfonsorimando.dev@gmail.com" target="_blank" class="btn btn-outline-light mx-1">
+                <a href="mailto:alfonsorimando.dev@gmail.com" target="_blank" class="btn btn-outline-light">
                     <i class="bi bi-envelope"></i>
                 </a>
-                <a href="assets/LuisAlfonsoRimando-Dev-CV.pdf" dqownload class="btn btn-outline-light mx-1">
+                <a href="assets/LuisAlfonsoRimando-Dev-CV.pdf" dqownload class="btn btn-outline-light">
                     <i class="bi bi-file-earmark-arrow-down"></i>
                 </a>
             </div>
-            <div class="col text-end BlenderPro-Thin fs-6">
-                Dev // Netrunner // Rockerboy
+            <div class="col text-end BlenderPro-Thin fs-6 d-none d-sm-block">
+                Neuromancer
             </div>
+            <!-- <div class="col text-end BlenderPro-Thin fs-6 d-none d-sm-block" >
+                Dev // Netrunner // Rockerboy
+            </div>  -->
         </div>
         
     </footer>
