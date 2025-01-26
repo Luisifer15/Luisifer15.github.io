@@ -1,149 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Xero's Portfolio</title>
-  <link rel="stylesheet" href="styles.css">
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-  <script src="scripts.js" defer></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <link rel="shortcut icon" type="image/x-icon" href="assets\logo\NULL Logo white.svg" />
+    <title>Luis Rimando | Developer Portfolio</title>
+
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!-- Fonts -->
+    <link href = "assets/fonts/Blender Pro/stylesheet.css" rel ="stylesheet" type ="text/css" />
+
+
+    
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/script.js"></script>
 </head>
-<body>
-  <header class="header">
-    <h1>Luis Rimando's Virtual Portfolio</h1>
-    <p class="subheader">Mildly Infuriating</p>
-  </header>
 
-  <main class="main">
-    <section id="projects">
-      <h2>Projects </h2>
-      <input type="text" id="search-bar" placeholder="Search..." />
-      <div class="projects-grid" id="projects-grid">
-       <!-- Projects will appear here dynamically -->
-      </div>
-    </section>
-    
+<body class="bg-dark-custom">
 
-    <section id="skills">
-      <h2>Skills</h2>
-      
-      <div class="skills-grid">
-        <!-- Technical Skills -->
-        <div class="skills-box">
-          <h3>Technical Skills</h3>
-          <ul>
-            <li>Project Management</li>
-            <li>Team Leadership</li>
-            <li>Problem Solving</li>
-            <li>Agile Methodologies</li>
-            <li>UI/UX Design</li>
-          </ul>
+    <header class="header container-fluid BlenderPro-Bold text-white fixed-top">
+        <div class="row justify-content-between align-items-center border-white border-bottom border-2 mx-sm-5 py-2">
+            <div class="col">
+                <img src="assets\logo\Wordmark wLogo white.svg" alt="Profile Picture" height="30">
+            </div>
+            <div class="col text-end fs-5">
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+                    <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+                </svg>
+            </div>
         </div>
-    
-        <!-- Programming Languages -->
-        <div class="skills-box">
-          <h3>Programming Languages</h3>
-          <ul>
-            <li><strong>C#</strong> <span class="specialty">[Specialty]</span></li>
-            <li>C</li>
-            <li>Python</li>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>Javascript</li>
-          </ul>
-        </div>
-    
-        <!-- Frameworks & Libraries -->
-        <div class="skills-box">
-          <h3>Frameworks & Libraries</h3>
-          <ul>
-            <li><strong>ASP.Net</strong> <span class="specialty">[Specialty]</span></li>
-            <li>Node.js</li>
-            <li>Bootstrap</li>
-          </ul>
-        </div>
-    
-        <!-- Tools -->
-        <div class="skills-box">
-          <h3>Tools</h3>
-          <ul>
-            <li><strong>Git & GitHub</strong> <span class="specialty">[Specialty]</span></li>
-            <li>Visual Studio</li>
-            <li>Visual Studio Code</li>
-            <li>MSSQL</li>
-          </ul>
-        </div>
-      </div>
-    </section>
-    
-    
+    </header>
 
-    <!-- About Section -->
-    <section class="about">
-      <h2>About Me</h2>
-      <div class="about-content">
-          <div class="about-box">
-              <div class="profile-layout">
-                  <img src="https://scontent.fmnl8-3.fna.fbcdn.net/v/t39.30808-6/423695272_10225127092873625_8788142623677527441_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=6ee11a&_nc_eui2=AeHcNCgDrrRwx03W_xNAITGysoRy4fmOKkGyhHLh-Y4qQTgu8ZUR0-KfOy2VYkMQxbo&_nc_ohc=ZgmX8dcEXCAQ7kNvgHW4IVY&_nc_zt=23&_nc_ht=scontent.fmnl8-3.fna&_nc_gid=AoMSQb4C1cRnrt9O6Wux7Nu&oh=00_AYDocdeR-50ltR-IyCbQgGQPx7dHroCFg6fPK5WMuP8v7Q&oe=67040A12" alt="Your Name" class="profile-image">
-                  <div class="bio-content">
-                      <h3 class="name">Luis Alfonso DP. Rimando</h3>
-                      <div class="divider"></div>
-                      <p>Style over substance</p>
-                      <p>My name is Luis Alfonso DP. Rimando, or just Luis. I am a recent Computer Engineering graduate eager to showcase my skills and make a meaningful impact. I specialize in logical and objective thinking, which equips me to excel as a backend developer. Beyond programming and problem-solving, I have a passion for music—both listening and performing—as I play the drums. I also enjoy video games, movies, and tv-series. I am particularly fascinated by the sci-fi and cyberpunk genres; the themes of rebellion and standing against oppression resonate deeply with me. Never Fade Away.</p>                  
-                    </div>
-              </div>
-          </div>
-          <div class="about-box">
-              <h3>Job Experience</h3>
-              <p>3 Year internship at WyPoint, social media posting, debugging, and feedback.</p>
-              <h3>Education History</h3>
-              <p>Elementary Education: Systems Plus College Foundation</p>
-              <p>Junior High School Education: Claro M. Recto ICT High School</p>
-              <p>Senior High School Education: Angeles University Foundation</p>
-              <p>College Education: Angeles University Foundation</p>
-          </div>
-      </div>
-    </section>
-  
-  
-  
-    <!-- Contact Section -->
-    <section id="contact">
-      <h2>Contact Me</h2>
-    
-      <div class="contact-box">
-        <div class="message-box">
-          <h3>Connect with me on social media:</h3>
-          <div class="divider"></div>
-          <div class="social-links">
-            <a href="https://twitter.com/yourprofile" target="_blank">Twitter</a>
-            <a href="https://github.com/yourprofile" target="_blank">GitHub</a>
-            <a href="https://linkedin.com/in/yourprofile" target="_blank">LinkedIn</a>
-            <a href="https://instagram.com/yourprofile" target="_blank">Instagram</a>
-          </div>
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+        <div class="offcanvas-header">
+            <h5 id="offcanvasRightLabel">Menu</h5>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>
-    
-        <div class="form-box">
-          <h3>Send me an email</h3>
-          <form class="contact-form" id="contact-form">
-            <label for="employer">From:</label>
-            <input type="text" id="employer" name="entry.1632585306" required>
-    
-            <label for="message">Message:</label>
-            <textarea id="message" name="entry.706469862" rows="5" required></textarea>
-    
-            <button type="submit">Submit</button>
-          </form>
+        <div class="offcanvas-body">
+            <ul class="nav flex-column">
+                <li class="nav-item" data-bs-dismiss="offcanvas">
+                    <a class="nav-link active" aria-current="page" href="#home">Home</a>
+                </li>
+                <li class="nav-item" data-bs-dismiss="offcanvas">
+                    <a class="nav-link" href="#about">About</a>
+                </li>
+                <li class="nav-item" data-bs-dismiss="offcanvas">
+                    <a class="nav-link" href="#projects">Projects</a>
+                </li>
+                <li class="nav-item" data-bs-dismiss="offcanvas">
+                    <a class="nav-link" href="#contact">Contact</a>
+                </li>
+            </ul>
         </div>
-      </div>
-    </section>
-    
-    
+    </div>
 
-  </main>
+    <main class="container-fluid">
+        <section id="home" class="vh-100 d-flex align-items-center justify-content-center text-white">
+            <h1>Home Section</h1>
+        </section>
+        <section id="about" class="vh-100 d-flex align-items-center justify-content-center text-white">
+            <h1>About Section</h1>
+        </section>
+        <section id="projects" class="vh-100 d-flex align-items-center justify-content-center text-white">
+            <h1>Projects Section</h1>
+        </section>
+        <section id="contact" class="vh-100 d-flex align-items-center justify-content-center text-white">
+            <h1>Contact Section</h1>
+        </section>
+    </main>
 
-  <footer class="footer">
-    <p>© 2024 LA-Rimando. Rock and Rage.</p>
-  </footer>
+    <footer class="footer container-fluid text-white fixed-bottom">
+        <div class="row border-white border-top border-2 mx-sm-5 py-2">
+            <div class="col">
+                <a href="https://github.com/Luisifer15" target="_blank" class="btn btn-outline-light mx-1">
+                    <i class="bi bi-github"></i>
+                </a>
+
+                <a href="https://linkedin.com/in/rimando-la" target="_blank" class="btn btn-outline-light mx-1">
+                    <i class="bi bi-linkedin"></i>
+                </a>
+
+                <a href="mailto:alfonsorimando.dev@gmail.com" target="_blank" class="btn btn-outline-light mx-1">
+                    <i class="bi bi-envelope"></i>
+                </a>
+                <a href="assets/LuisAlfonsoRimando-Dev-CV.pdf" dqownload class="btn btn-outline-light mx-1">
+                    <i class="bi bi-file-earmark-arrow-down"></i>
+                </a>
+            </div>
+            <div class="col text-end BlenderPro-Thin fs-6">
+                Dev // Netrunner // Rockerboy
+            </div>
+        </div>
+        
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>
