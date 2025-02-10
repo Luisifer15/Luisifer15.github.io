@@ -65,6 +65,14 @@ document.addEventListener('DOMContentLoaded', function () {
                     btn.classList.remove(btnClassToRemove);
                     btn.classList.add(btnClassToAdd);
                 });
+
+                // Toggle visibility of the link buttons column
+                var linkButtonsColumn = document.getElementById('FooterLinks');
+                if (section.id === 'home') {
+                    linkButtonsColumn.setAttribute('hidden', 'hidden');
+                } else {
+                    linkButtonsColumn.removeAttribute('hidden');
+                }
             }
         });
     }

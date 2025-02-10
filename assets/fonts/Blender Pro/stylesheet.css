@@ -106,3 +106,32 @@
     font-style: italic;
 }
 
+.BlenderPro {
+    font-family: 'Blender Pro';
+    font-weight: 500;
+    font-style: normal;
+}
+
+.BlenderPro-Thin {
+    font-family: 'Blender Pro';
+    font-weight: 100;
+    font-style: normal;
+}
+
+.BlenderPro-Book {
+    font-family: 'Blender Pro Book';
+    font-weight: normal;
+    font-style: normal;
+}
+
+.BlenderPro-Bold {
+    font-family: 'Blender Pro';
+    font-weight: bold;
+    font-style: normal;
+}
+
+.BlenderPro-Heavy {
+    font-family: 'Blender Pro';
+    font-weight: 900;
+    font-style: normal;
+}
